@@ -1,12 +1,12 @@
-def solution(n):
+def solution(arr):
     """
     Args:
-        n (list): List of numbers
+        arr (list): List of numbers
 
     Returns:
         int: Max gap size in the binary representation of a number
     """
-    binary_string = '{:b}'.format(n)
+    binary_string = '{:b}'.format(arr)
     if len(binary_string) < 3:
         return 0
 

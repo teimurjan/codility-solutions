@@ -1,22 +1,22 @@
-def solution(n, k):
+def solution(arr, k):
     """
     Args:
-        n (list): List of integers
+        arr (list): List of integers
         k (int): Times to rotate the list n
 
     Returns:
         list: List rotated k times
     """
-    length = len(n)
+    length = len(arr)
     if length == 0:
-        return n
+        return arr
 
     k_cut = k % length
     if k_cut == length or k_cut == 0:
-        return n
+        return arr
     else:
         pivot = length - k_cut
-        return n[pivot:] + n[: pivot]
+        return arr[pivot:] + arr[: pivot]
 
 
 assert solution([3, 8, 9, 7, 6], 3) == [9, 7, 6, 3, 8]

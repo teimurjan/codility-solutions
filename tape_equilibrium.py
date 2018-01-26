@@ -1,22 +1,22 @@
 from sys import maxsize
 
 
-def solution(n):
+def solution(arr):
     """
     Args:
-        n (list): List of integers
+        arr (list): List of integers
 
     Returns:
         int: absolute value of the difference between the sum of first and the second parts of n
     """
     max_sum = 0
-    for i in n:
+    for i in arr:
         max_sum += i
 
     min_difference = maxsize
     sub_sum = 0
-    for i in range(0, len(n) - 1):
-        sub_sum += n[i]
+    for i in range(0, len(arr) - 1):
+        sub_sum += arr[i]
         difference = abs(max_sum - 2 * sub_sum)
         if difference < min_difference:
             min_difference = difference

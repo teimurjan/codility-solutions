@@ -1,12 +1,12 @@
-def solution(n):
+def solution(arr):
     """
     Args:
-        n (list): List of odd numbers
+        arr (list): List of odd numbers
 
     Returns:
         int: The number occurs once in a list
     """
     result = 0
-    for number in n:
+    for number in arr:
         result ^= number
     return result
