@@ -1,2 +1,2 @@
 # Codility lessons solution material
-Here is the solutions for [codility](codility.com) lessons solved with Python.
+Here is the solutions for [codility lessons](https://app.codility.com/programmers/lessons/1-iterations/) solved with Python.
