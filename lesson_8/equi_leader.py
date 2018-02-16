@@ -4,7 +4,7 @@ from collections import deque
 def find_leaders(arr):
     """
     Args:
-        arr (list): Find equi leaders for all slices starting from 0
+        arr (list): List of integers
 
     Returns:
         deque: Equi leaders for every slice
